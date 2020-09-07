@@ -1,0 +1,11 @@
+{
+    "max_speed_allowed": "90.0",
+    "speed_log":[
+        { "vehicle": 1, "speed": 70.03, "time": 1592218800},
+        { "vehicle": 1, "speed": 75.01, "time": 1592218801},
+        { "vehicle": 12, "speed": 70.02, "time": 3544492218801}
+    ],
+    "break_status":[
+        {"time": 1592218800, "imei": 123456789000321, "speed":78, "break_pedal_status": 0 }
+    ]
+}
