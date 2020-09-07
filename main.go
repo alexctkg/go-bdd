@@ -1,7 +1,7 @@
 package main
 
 import (
-	"detector-demo/api"
+	"go-bdd/api"
 	"net/http"
 )
 

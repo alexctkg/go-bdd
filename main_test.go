@@ -2,9 +2,9 @@ package main
 
 import (
 	"bytes"
-	"detector-demo/api"
 	"encoding/json"
 	"fmt"
+	"go-bdd/api"
 	"net/http"
 	"net/http/httptest"
 

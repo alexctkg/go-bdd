@@ -1,18 +1,16 @@
-# Teste 'Go Software Developer' Gobrax
 
-Ficamos felizes com seu interesse em fazer parte do time Gobrax! Este teste avaliará suas habilidades em desenvolvimento na linguagem Go com o uso de [BDD](https://pt.wikipedia.org/wiki/Behavior_Driven_Development).
-
-Este projeto está configurado para usar a biblioteca [Godog](https://github.com/cucumber/godog), mas esta ainda não foi adicionada como dependência do projeto.
-
-Valorizamos código bem testado e adotamos Cucumber/BDD para mantermos uma documentação viva e testável. Assim, o time de negócio da Gobrax descreveu duas *features* para evolução do projeto. Espera-se que o candidato implemente tais features, nos moldes do BDD, respeitando a seguinte estrutura de projeto:
-
- - **features**: contém a documentação BDD.
- - **service**: contém a implementação das regras de negócio.
- - **api**: contém a implementação de endpoints.
- - **main_test.go**: contém as funcões de testes.
+## Getting started
+1. Clone o repositório  no `$GOPATH/src` 
+2. Entre na pasta `$ cd Gogo-bdd`
+3. Execute os testes `$ godog`
+4. Executar o projeto `$ go run main.go` 
 
 
-O projeto final deve está no GitHub e o link deve ser enviado no email ti@gobrax.com.
+# Observações
+O teste contêm apenas a aplicação dos endpoints que coletam a máxima velocidade e a última velocidade pelo id.
+Os enpoints podem ser acessados pelas rotas
+- http://localhost:8080/max-speed-allowed
+- http://localhost:8080/last-speed?id=
 
-
-### Boa sorte!
+Para acessar o endpoint  com o id inserido no meio da url (/{id}/last-speed) seria necessãrio o uso de um framework web como o gin e o mux, porém como o godog usa os protocolos net/http simplifiquei e fiz dessa maneira com um parâmetro. Além do mais, o teste desse endpoint falha na response. Como a linguagem de Go usa muito o tratamento de erros resolvi
+tratar os erros, isso entrou em conflito com a feature descrita.
